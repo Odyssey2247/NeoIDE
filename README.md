@@ -1,4 +1,4 @@
-#My simple config for use neovim as IDE
+# My simple config for use neovim as IDE
 
 This config file only contains the minimal(but totally functional) plugins for
 use nvim as IDE
@@ -20,20 +20,22 @@ the list of plugins are:
 # Installation
 
 1. clone plugin repo
-   git clone https://github.com/k-takata/minpac.git ~/.config/nvim/pack/minpac/opt/minpac
- 
+
+   `git clone https://github.com/k-takata/minpac.git ~/.config/nvim/pack/minpac/opt/minpac`
+
 2. clone this repo 
-   git clone  https://github.com/Odyssey2247/nvimDE ~/.config/nvim/
+
+   `git clone  https://github.com/Odyssey2247/nvimDE ~/.config/nvim/`
 
 3. open nvim and install plugins
-  :PackUpdate
+
+   `:PackUpdate`
 
 # keybindings
 
-key config are in general/meppings.vim
+key config are in: `nvim/general/meppings.vim`
 
 # settings
 
-settings for neovim are in general/settings.vim
-
-for plugins in init.vim
+settings for neovim are in: `nvim/general/settings.vim`
+for plugins in: `nvim/init.vim`
