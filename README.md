@@ -10,7 +10,7 @@ the list of plugins are:
 1. [minipac](https://github.com/k-takata/minpac) plugin manager
 2. [syntax-vim-ex](https://github.com/vim-jp/syntax-vim-ex) syntax plugin
 3. [open-browser](https://github.com/tyru/open-browser.vim) 
-4. [coc](https://github.com/neoclide/coc.nvim') for LSP
+4. [coc](https://github.com/neoclide/coc.nvim) for LSP
 5. [fzf](https://github.com/junegunn/fzf) for searching files
 6. [vim-devicons](https://github.com/ryanoasis/vim-devicons)
 7. [nerdtree](https://github.com/preservim/nerdtree) for file management
