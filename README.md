@@ -17,4 +17,23 @@ the list of plugins are:
 10. [vimcmdline](https://github.com/jalvesaq/vimcmdline) for run selected line
 11. [vim-code-runner](https://github.com/xianzhon/vim-code-runner) for run code
 
+# Installation
+
+1. clone plugin repo
+   git clone https://github.com/k-takata/minpac.git ~/.config/nvim/pack/minpac/opt/minpac
  
+2. clone this repo 
+   git clone  https://github.com/Odyssey2247/nvimDE ~/.config/nvim/
+
+3. open nvim and install plugins
+  :PackUpdate
+
+# keybindings
+
+key config are in general/meppings.vim
+
+# settings
+
+settings for neovim are in general/settings.vim
+
+for plugins in init.vim
