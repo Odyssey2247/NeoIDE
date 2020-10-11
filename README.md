@@ -25,9 +25,11 @@ the list of plugins are:
 
    `wget -O - https://raw.githubusercontent.com/Odyssey2247/NeoIDE/main/install | bash`
 
-2. open nvim and install plugins
+2. open nvim and install plugins ignore errors
 
    `:PackUpdate`
+   
+3. restart nvim and fun!!!   
 
 # keybindings
 

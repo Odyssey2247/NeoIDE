@@ -3,6 +3,8 @@ git clone https://github.com/k-takata/minpac.git ~/.config/nvim/pack/minpac/opt/
 git clone https://github.com/Odyssey2247/nvimDE tmpVim
 mv tmpVim/* ~/.config/nvim/
 rm -rf tmpVim
-
-echo "Now open nvim and run"
+echo -e "-----------------------------------"
+echo "Now open nvim and run,ignore errors"
 echo "	:PackUpdate"
+echo "restart nvim and fun!!!"
+echo -e "-----------------------------------"
