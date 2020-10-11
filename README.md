@@ -21,15 +21,11 @@ the list of plugins are:
 
 # Installation
 
-1. clone plugin repo
+1. in terminal run:
 
-   `git clone https://github.com/k-takata/minpac.git ~/.config/nvim/pack/minpac/opt/minpac`
+   `wget -O - https://raw.githubusercontent.com/Odyssey2247/NeoIDE/main/install | bash`
 
-2. clone this repo 
-
-   `git clone  https://github.com/Odyssey2247/nvimDE ~/.config/nvim/`
-
-3. open nvim and install plugins
+2. open nvim and install plugins
 
    `:PackUpdate`
 
