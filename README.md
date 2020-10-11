@@ -23,6 +23,7 @@ the list of plugins are:
 1. Nodejs
 2. npm
 3. fzf
+4. [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
 
 if you have problems please refer to git plugin repo for more info
 
