@@ -30,14 +30,15 @@ function! PackInit() abort
 "  call minpac#add('haishanh/night-owl.vim') vim theme
 "  call minpac#add('ms-jpq/chadtree', {'branch': 'chad', 'do': ':UpdateRemotePlugins'}) file manager
 "especifig for languaje---------------------------------------
-  call minpac#add('dart-lang/dart-vim-plugin') "dart 
-  call minpac#add('natebosch/vim-lsc')
-  call minpac#add('natebosch/vim-lsc-dart')
+"  call minpac#add('dart-lang/dart-vim-plugin') "dart 
+"  call minpac#add('natebosch/vim-lsc')
+"  call minpac#add('natebosch/vim-lsc-dart')
 endfunction
+
 
 " Plugin settings here.
 
-"fuzzy plugin
+"fuzzy plugin---------------------------------------------------------------------------------------------------------
 map ; :Files<CR>
 command! -bang -nargs=? -complete=dir Files call fzf#vim#files(<q-args>, {'options': ['--layout=reverse', '--info=inline', '--preview', '~/.config/nvim/pack/minpac/start/fzf.vim/bin/preview.sh {}']}, <bang>0)
 let g:fzf_layout = {'left': '30%'}
@@ -100,7 +101,7 @@ if (empty($TMUX))
   endif
 endif
 
-"code runer--------------------------------------------------------------------------
+"code runer---------------------------------------------------------------------------------------------------------------
 "nnoremap <F5> <plug>CodeRunner
 nmap <F5> <plug>CodeRunner
 let g:code_runner_save_before_execute = 1
@@ -109,14 +110,15 @@ let g:CodeRunnerCommandMap = {
       \ 'dart' : 'dart --enable-asserts $fileName'
       \}
 
-"vimdart plugin-----------------------------------------------------------------------
+"vimdart plugin-----------------------------------------------------------------------------------------------------------
 let g:dart_style_guide = 2
 let g:dart_format_on_save = 1
 
-"vim lsc----------------------------------------------------------------------
+"vim lsc------------------------------------------------------------------------------------------------------------------
 let g:lsc_auto_map = v:true
 
 
+"minpac commands----------------------------------------------------------------------------------------------------------
 "command! -bang -nargs=? -complete=dir Files call fzf#vim#files(<q-args>, {'options': ['--layout=reverse', '--info=inline', '--preview', 'cat {}']}, <bang>0)
 " Define user commands for updating/cleaning the plugins.
 " Each of them calls PackInit() to load minpac and register

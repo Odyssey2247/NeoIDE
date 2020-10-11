@@ -1,3 +1,5 @@
+![neoIDE](neoIDE.png)
+
 # My simple config for use neovim as IDE
 
 This config file only contains the minimal(but totally functional) plugins for
@@ -33,7 +35,7 @@ the list of plugins are:
 
 # keybindings
 
-key config are in: `nvim/general/meppings.vim`
+key config are in: `nvim/general/mappings.vim`
 
 # settings
 
