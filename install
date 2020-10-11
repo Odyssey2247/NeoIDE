@@ -4,7 +4,7 @@ git clone https://github.com/Odyssey2247/nvimDE tmpVim
 mv tmpVim/* ~/.config/nvim/
 rm -rf tmpVim
 echo -e "-----------------------------------"
-echo "Now open nvim and run,ignore errors"
+echo "Now open nvim (ignore errors) and run:"
 echo "	:PackUpdate"
 echo "restart nvim and fun!!!"
 echo -e "-----------------------------------"
