@@ -19,6 +19,12 @@ the list of plugins are:
 10. [vimcmdline](https://github.com/jalvesaq/vimcmdline) for run selected line
 11. [vim-code-runner](https://github.com/xianzhon/vim-code-runner) for run code
 
+# Aditional dependencies for plugins
+1. Nodejs
+2. npm
+3. fzf
+if you have problems please refer to git plugin repo for more info
+
 # Installation
 
 1. in terminal run:
