@@ -31,7 +31,7 @@ if you have problems please refer to git plugin repo for more info
 
 1. in terminal run:
 
-   `wget -O - https://raw.githubusercontent.com/Odyssey2247/NeoIDE/main/install | bash`
+   `wget -O - https://raw.githubusercontent.com/joselbr2099/NeoIDE/main/install | bash`
 
 2. open nvim and install plugins(ignore errors):
 
