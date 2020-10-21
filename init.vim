@@ -27,6 +27,7 @@ function! PackInit() abort
 "  call minpac#add('sbdchd/vim-run') run code
   call minpac#add('xianzhon/vim-code-runner') "run code https://github.com/xianzhon/vim-code-runner 
   call minpac#add('thaerkh/vim-indentguides') "for guide lines
+  call minpac#add('907th/vim-auto-save') "autosave
 "  call minpac#add('joshdick/onedark.vim')
 "  call minpac#add('haishanh/night-owl.vim') vim theme
 "  call minpac#add('ms-jpq/chadtree', {'branch': 'chad', 'do': ':UpdateRemotePlugins'}) file manager
@@ -118,6 +119,11 @@ let g:dart_format_on_save = 1
 "vim lsc------------------------------------------------------------------------------------------------------------------
 let g:lsc_auto_map = v:true
 
+"for autosave-------------------------------------------------------------------------------------------------------------
+" Enable autosave plugin
+let g:auto_save = 1
+"And now turn Vim swapfile off
+set noswapfile
 
 "minpac commands----------------------------------------------------------------------------------------------------------
 "command! -bang -nargs=? -complete=dir Files call fzf#vim#files(<q-args>, {'options': ['--layout=reverse', '--info=inline', '--preview', 'cat {}']}, <bang>0)
