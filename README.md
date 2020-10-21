@@ -18,6 +18,7 @@ the list of plugins are:
 9. [vim-material](https://github.com/hzchirs/vim-material) for theming
 10. [vimcmdline](https://github.com/jalvesaq/vimcmdline) for run selected line
 11. [vim-code-runner](https://github.com/xianzhon/vim-code-runner) for run code
+12. [vim-indentguides](https://github.com/thaerkh/vim-indentguides) for guide lines
 
 # Aditional dependencies for plugins
 1. Nodejs
