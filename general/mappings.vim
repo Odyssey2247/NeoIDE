@@ -89,3 +89,6 @@ function! MaximizeToggle()
     only
   endif
 endfunction
+
+"select all
+nnoremap <C-A> ggVG
