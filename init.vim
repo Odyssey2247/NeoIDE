@@ -26,6 +26,7 @@ function! PackInit() abort
   call minpac#add('jalvesaq/vimcmdline') "vim run line code  https://github.com/jalvesaq/vimcmdline
 "  call minpac#add('sbdchd/vim-run') run code
   call minpac#add('xianzhon/vim-code-runner') "run code https://github.com/xianzhon/vim-code-runner 
+  call minpac#add('thaerkh/vim-indentguides') "for guide lines
 "  call minpac#add('joshdick/onedark.vim')
 "  call minpac#add('haishanh/night-owl.vim') vim theme
 "  call minpac#add('ms-jpq/chadtree', {'branch': 'chad', 'do': ':UpdateRemotePlugins'}) file manager
