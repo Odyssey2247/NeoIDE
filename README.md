@@ -19,6 +19,7 @@ the list of plugins are:
 10. [vimcmdline](https://github.com/jalvesaq/vimcmdline) for run selected line
 11. [vim-code-runner](https://github.com/xianzhon/vim-code-runner) for run code
 12. [vim-indentguides](https://github.com/thaerkh/vim-indentguides) for guide lines
+13. [vim-auto-save](https://github.com/907th/vim-auto-save) for autosave
 
 # Aditional dependencies for plugins
 1. Nodejs
