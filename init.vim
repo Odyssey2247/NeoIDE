@@ -28,6 +28,8 @@ function! PackInit() abort
   call minpac#add('xianzhon/vim-code-runner') "run code https://github.com/xianzhon/vim-code-runner 
   call minpac#add('thaerkh/vim-indentguides') "for guide lines
   call minpac#add('907th/vim-auto-save') "autosave
+  call minpac#add('airblade/vim-gitgutter') "for git control
+
 "  call minpac#add('joshdick/onedark.vim')
 "  call minpac#add('haishanh/night-owl.vim') vim theme
 "  call minpac#add('ms-jpq/chadtree', {'branch': 'chad', 'do': ':UpdateRemotePlugins'}) file manager
@@ -124,6 +126,13 @@ let g:lsc_auto_map = v:true
 let g:auto_save = 1
 "And now turn Vim swapfile off
 set noswapfile
+
+"gitgutter----------------------------------------------------------------------------------------------------------------
+function! GitStatus()
+  let [a,m,r] = GitGutterGetHunkSummary()
+  return printf('+%d ~%d -%d', a, m, r)
+endfunction
+set statusline+=%{GitStatus()}
 
 "minpac commands----------------------------------------------------------------------------------------------------------
 "command! -bang -nargs=? -complete=dir Files call fzf#vim#files(<q-args>, {'options': ['--layout=reverse', '--info=inline', '--preview', 'cat {}']}, <bang>0)
