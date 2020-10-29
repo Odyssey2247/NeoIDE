@@ -26,17 +26,19 @@ function! PackInit() abort
   call minpac#add('jalvesaq/vimcmdline') "vim run line code  https://github.com/jalvesaq/vimcmdline
 "  call minpac#add('sbdchd/vim-run') run code
   call minpac#add('xianzhon/vim-code-runner') "run code https://github.com/xianzhon/vim-code-runner 
-  call minpac#add('thaerkh/vim-indentguides') "for guide lines
-  call minpac#add('907th/vim-auto-save') "autosave
-  call minpac#add('airblade/vim-gitgutter') "for git control
-
 "  call minpac#add('joshdick/onedark.vim')
 "  call minpac#add('haishanh/night-owl.vim') vim theme
 "  call minpac#add('ms-jpq/chadtree', {'branch': 'chad', 'do': ':UpdateRemotePlugins'}) file manager
+   call minpac#add('thaerkh/vim-indentguides') " indentguides
+   call minpac#add('907th/vim-auto-save')
+   call minpac#add('airblade/vim-gitgutter') "for git control
+   call minpac#add('Badacadabra/vim-archery') "teming
 "especifig for languaje---------------------------------------
-"  call minpac#add('dart-lang/dart-vim-plugin') "dart 
-"  call minpac#add('natebosch/vim-lsc')
-"  call minpac#add('natebosch/vim-lsc-dart')
+  call minpac#add('dart-lang/dart-vim-plugin') "dart 
+"  call minpac#add('pr3d4t0r/dart-vim-syntax') "dart
+  call minpac#add('natebosch/vim-lsc')
+  call minpac#add('natebosch/vim-lsc-dart')
+  
 endfunction
 
 
@@ -78,7 +80,7 @@ nnoremap <a-t> :call OpenTerminal()<CR>
 "airline-----------------------------------------------------------------------------------------------------------------
 let g:webdevicons_enable_airline_tabline = 1
 let g:airline_powerline_fonts = 1
-let g:airline_theme='material'
+let g:airline_theme='archery'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
@@ -87,7 +89,7 @@ let g:airline#extensions#tabline#buffer_nr_show = 1
 "vim theme----------------------------------------------------------------------------------------------------------------
 "colorscheme night-owl
 set background=dark
-colorscheme vim-material
+colorscheme archery
 "let g:material_style='palenight'
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
 "If you're using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux's 24-bit color support
@@ -116,23 +118,32 @@ let g:CodeRunnerCommandMap = {
 
 "vimdart plugin-----------------------------------------------------------------------------------------------------------
 let g:dart_style_guide = 2
-let g:dart_format_on_save = 1
+"let g:dart_format_on_save = 1
 
 "vim lsc------------------------------------------------------------------------------------------------------------------
 let g:lsc_auto_map = v:true
 
-"for autosave-------------------------------------------------------------------------------------------------------------
+let g:webdevicons_enable = 1
+let g:webdevicons_enable_nerdtree = 1
+let g:webdevicons_enable_unite = 1
+
+"for autosave------------------------------------------------------------------------------------------------------------------
 " Enable autosave plugin
 let g:auto_save = 1
 "And now turn Vim swapfile off
 set noswapfile
-
-"gitgutter----------------------------------------------------------------------------------------------------------------
+"fir
+"gitgutter---------------------------------------------------------------------------------------------------------------------
 function! GitStatus()
   let [a,m,r] = GitGutterGetHunkSummary()
   return printf('+%d ~%d -%d', a, m, r)
 endfunction
 set statusline+=%{GitStatus()}
+
+"theme archery-----------------------------------------------------------------------------------------------------------------------
+set showtabline=2
+set laststatus=2
+
 
 "minpac commands----------------------------------------------------------------------------------------------------------
 "command! -bang -nargs=? -complete=dir Files call fzf#vim#files(<q-args>, {'options': ['--layout=reverse', '--info=inline', '--preview', 'cat {}']}, <bang>0)
