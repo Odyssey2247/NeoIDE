@@ -22,7 +22,7 @@ function! PackInit() abort
   call minpac#add('preservim/nerdtree') "doc https://github.com/preservim/nerdtree/blob/master/doc/NERDTree.txt
   call minpac#add('vim-airline/vim-airline') "bar status
   call minpac#add('vim-airline/vim-airline-themes') 
-  call minpac#add('hzchirs/vim-material') "vim theme
+"  call minpac#add('hzchirs/vim-material') "vim theme
   call minpac#add('jalvesaq/vimcmdline') "vim run line code  https://github.com/jalvesaq/vimcmdline
 "  call minpac#add('sbdchd/vim-run') run code
   call minpac#add('xianzhon/vim-code-runner') "run code https://github.com/xianzhon/vim-code-runner 
@@ -33,6 +33,7 @@ function! PackInit() abort
    call minpac#add('907th/vim-auto-save')
    call minpac#add('airblade/vim-gitgutter') "for git control
    call minpac#add('Badacadabra/vim-archery') "teming
+   call minpac#add('arcticicestudio/nord-vim') "teming
 "especifig for languaje---------------------------------------
   call minpac#add('dart-lang/dart-vim-plugin') "dart 
 "  call minpac#add('pr3d4t0r/dart-vim-syntax') "dart
