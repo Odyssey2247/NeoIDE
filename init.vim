@@ -21,9 +21,9 @@ function! PackInit() abort
 "  call minpac#add('dracula/vim')
   call minpac#add('preservim/nerdtree') "doc https://github.com/preservim/nerdtree/blob/master/doc/NERDTree.txt
   call minpac#add('vim-airline/vim-airline') "bar status
-  call minpac#add('vim-airline/vim-airline-themes') 
+"  call minpac#add('vim-airline/vim-airline-themes') 
 "  call minpac#add('hzchirs/vim-material') "vim theme
-  call minpac#add('jalvesaq/vimcmdline') "vim run line code  https://github.com/jalvesaq/vimcmdline
+"  call minpac#add('jalvesaq/vimcmdline') "vim run line code  https://github.com/jalvesaq/vimcmdline
 "  call minpac#add('sbdchd/vim-run') run code
   call minpac#add('xianzhon/vim-code-runner') "run code https://github.com/xianzhon/vim-code-runner 
 "  call minpac#add('joshdick/onedark.vim')
@@ -32,7 +32,7 @@ function! PackInit() abort
    call minpac#add('thaerkh/vim-indentguides') " indentguides
    call minpac#add('907th/vim-auto-save')
    call minpac#add('airblade/vim-gitgutter') "for git control
-   call minpac#add('Badacadabra/vim-archery') "teming
+"   call minpac#add('Badacadabra/vim-archery') "teming
    call minpac#add('arcticicestudio/nord-vim') "teming
 "especifig for languaje---------------------------------------
   call minpac#add('dart-lang/dart-vim-plugin') "dart 
@@ -81,7 +81,7 @@ nnoremap <a-t> :call OpenTerminal()<CR>
 "airline-----------------------------------------------------------------------------------------------------------------
 let g:webdevicons_enable_airline_tabline = 1
 let g:airline_powerline_fonts = 1
-let g:airline_theme='archery'
+let g:airline_theme='nord'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
@@ -90,7 +90,7 @@ let g:airline#extensions#tabline#buffer_nr_show = 1
 "vim theme----------------------------------------------------------------------------------------------------------------
 "colorscheme night-owl
 set background=dark
-colorscheme archery
+colorscheme nord
 "let g:material_style='palenight'
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
 "If you're using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux's 24-bit color support
@@ -142,8 +142,8 @@ endfunction
 set statusline+=%{GitStatus()}
 
 "theme archery-----------------------------------------------------------------------------------------------------------------------
-set showtabline=2
-set laststatus=2
+"set showtabline=2
+"set laststatus=2
 
 
 "minpac commands----------------------------------------------------------------------------------------------------------
