@@ -41,7 +41,8 @@ function! PackInit() abort
   call minpac#add('natebosch/vim-lsc-dart')
   
 endfunction
-
+"don't fotrger install coc snippets:
+":CocInstall coc-snippets
 
 " Plugin settings here.
 
@@ -119,7 +120,7 @@ let g:CodeRunnerCommandMap = {
 
 "vimdart plugin-----------------------------------------------------------------------------------------------------------
 let g:dart_style_guide = 2
-"let g:dart_format_on_save = 1
+let g:dart_format_on_save = 1
 
 "vim lsc------------------------------------------------------------------------------------------------------------------
 let g:lsc_auto_map = v:true
