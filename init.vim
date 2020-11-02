@@ -45,6 +45,17 @@ endfunction
 ":CocInstall coc-snippets
 
 " Plugin settings here.
+"coc plugin-----------------------------------------------------------------------------------------------------------
+let g:coc_global_extensions = [
+            \ 'coc-json',
+            \ 'coc-clangd',
+            \ 'coc-python',
+            \ 'coc-snippets',
+            \ 'coc-ultisnips',
+            \ 'coc-texlab',
+            \ 'coc-pairs'
+            \ 'coc-flutter'
+            \ ]
 
 "fuzzy plugin---------------------------------------------------------------------------------------------------------
 map ; :Files<CR>
