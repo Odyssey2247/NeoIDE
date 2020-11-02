@@ -136,11 +136,11 @@ let g:auto_save = 1
 set noswapfile
 "fir
 "gitgutter---------------------------------------------------------------------------------------------------------------------
-function! GitStatus()
-  let [a,m,r] = GitGutterGetHunkSummary()
-  return printf('+%d ~%d -%d', a, m, r)
-endfunction
-set statusline+=%{GitStatus()}
+"function! GitStatus()
+"  let [a,m,r] = GitGutterGetHunkSummary()
+"  return printf('+%d ~%d -%d', a, m, r)
+"endfunction
+"set statusline+=%{GitStatus()}
 
 "theme archery-----------------------------------------------------------------------------------------------------------------------
 "set showtabline=2
