@@ -92,3 +92,6 @@ endfunction
 
 "select all
 nnoremap <C-A> ggVG
+
+"best brackes
+inoremap {<CR> {<CR>}<C-o>O
