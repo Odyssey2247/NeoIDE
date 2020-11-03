@@ -6,4 +6,4 @@ rm -rf tmpVim
 echo -e "-------------------------------------------------"
 echo "Now open nvim (ignore errors) and install pluginns"
 echo -e "-------------------------------------------------"
-nvim -c 'PackUpdate'
+nvim --cmd 'PackUpdate'
