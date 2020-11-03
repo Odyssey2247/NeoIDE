@@ -4,6 +4,8 @@ git clone https://github.com/joselbr2099/NeoIDE tmpVim
 mv tmpVim/* ~/.config/nvim/
 rm -rf tmpVim
 echo -e "-------------------------------------------------"
-echo "Now open nvim (ignore errors) and install pluginns"
+echo "nvim install plugins (ignore errors)..."
+#nvim +PackUpdate +qa -u ~/.config/nvim/tmp.vim --headless
+nvim +PackUpdate +qa --headless
+echo "installation finish now open nvim"
 echo -e "-------------------------------------------------"
-nvim +PackUpdate
