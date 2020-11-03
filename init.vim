@@ -41,21 +41,10 @@ function! PackInit() abort
   call minpac#add('natebosch/vim-lsc-dart')
   
 endfunction
-"don't fotrger install coc snippets:
-":CocInstall coc-snippets
 
 " Plugin settings here.
 "coc plugin-----------------------------------------------------------------------------------------------------------
-let g:coc_global_extensions = [
-            \ 'coc-json',
-            \ 'coc-clangd',
-            \ 'coc-python',
-            \ 'coc-snippets',
-            \ 'coc-ultisnips',
-            \ 'coc-texlab',
-            \ 'coc-pairs'
-            \ 'coc-flutter'
-            \ ]
+let g:coc_global_extensions = ['coc-json','coc-clangd','coc-python','coc-snippets','coc-ultisnips','coc-texlab','coc-pairs','coc-flutter']
 
 "fuzzy plugin---------------------------------------------------------------------------------------------------------
 map ; :Files<CR>
@@ -145,13 +134,13 @@ let g:webdevicons_enable_unite = 1
 let g:auto_save = 1
 "And now turn Vim swapfile off
 set noswapfile
-"fir
+
 "gitgutter---------------------------------------------------------------------------------------------------------------------
-"function! GitStatus()
-"  let [a,m,r] = GitGutterGetHunkSummary()
-"  return printf('+%d ~%d -%d', a, m, r)
-"endfunction
-"set statusline+=%{GitStatus()}
+function! GitStatus()
+  let [a,m,r] = GitGutterGetHunkSummary()
+  return printf('+%d ~%d -%d', a, m, r)
+endfunction
+set statusline+=%{GitStatus()}
 
 "theme archery-----------------------------------------------------------------------------------------------------------------------
 "set showtabline=2
