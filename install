@@ -7,7 +7,9 @@ echo -e "-------------------------------------------------"
 echo "nvim install plugins (ignore errors)..."
 echo -e "-------------------------------------------------"
 #nvim +PackUpdate +qa -u ~/.config/nvim/tmp.vim --headless
+
 nvim +PackUpdate +qa --headless
+
 echo -e "-------------------------------------------------"
 echo "installation finish now open nvim"
 echo -e "-------------------------------------------------"
