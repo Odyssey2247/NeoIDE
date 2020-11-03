@@ -3,8 +3,7 @@ git clone https://github.com/k-takata/minpac.git ~/.config/nvim/pack/minpac/opt/
 git clone https://github.com/joselbr2099/NeoIDE tmpVim
 mv tmpVim/* ~/.config/nvim/
 rm -rf tmpVim
-echo -e "-----------------------------------"
-echo "Now open nvim (ignore errors) and run:"
-echo "	:PackUpdate"
-echo "restart nvim and fun!!!"
-echo -e "-----------------------------------"
+echo -e "-------------------------------------------------"
+echo "Now open nvim (ignore errors) and install pluginns"
+echo -e "-------------------------------------------------"
+nvim -c 'PackUpdate'
