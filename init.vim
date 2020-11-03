@@ -44,7 +44,7 @@ endfunction
 
 " Plugin settings here.
 "coc plugin-----------------------------------------------------------------------------------------------------------
-let g:coc_global_extensions = ['coc-json','coc-clangd','coc-python','coc-snippets','coc-ultisnips','coc-texlab','coc-pairs','coc-flutter']
+let g:coc_global_extensions = ['coc-json','coc-clangd','coc-python','coc-snippets','coc-texlab','coc-pairs','coc-flutter-tools']
 
 "fuzzy plugin---------------------------------------------------------------------------------------------------------
 map ; :Files<CR>
@@ -146,6 +146,9 @@ set statusline+=%{GitStatus()}
 "set showtabline=2
 "set laststatus=2
 
+"for coc-snippet---------------------------------------------------------------------------------------------------------------------
+" Use <leader>x for convert visual selected code to snippet
+xmap <leader>x  <Plug>(coc-convert-snippet)
 
 "minpac commands----------------------------------------------------------------------------------------------------------
 "command! -bang -nargs=? -complete=dir Files call fzf#vim#files(<q-args>, {'options': ['--layout=reverse', '--info=inline', '--preview', 'cat {}']}, <bang>0)
