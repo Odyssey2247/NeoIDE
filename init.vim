@@ -15,8 +15,8 @@ function! PackInit() abort
   call minpac#add('vim-jp/syntax-vim-ex') "vim syntax
   call minpac#add('tyru/open-browser.vim') "open in browser
   call minpac#add('neoclide/coc.nvim', {'branch': 'release'}) "coc for lsp
-  call minpac#add( 'junegunn/fzf', { 'do': { -> fzf#install() } }  )
-  call minpac#add('junegunn/fzf.vim')
+"  call minpac#add( 'junegunn/fzf', { 'do': { -> fzf#install() } }  )
+"  call minpac#add('junegunn/fzf.vim')
   call minpac#add('ryanoasis/vim-devicons') "vim devicons
 "  call minpac#add('dracula/vim')
   call minpac#add('preservim/nerdtree') "doc https://github.com/preservim/nerdtree/blob/master/doc/NERDTree.txt
@@ -34,11 +34,13 @@ function! PackInit() abort
    call minpac#add('airblade/vim-gitgutter') "for git control
 "   call minpac#add('Badacadabra/vim-archery') "teming
    call minpac#add('arcticicestudio/nord-vim') "teming
+   call minpac#add('github/copilot.vim') 
 "especifig for languaje---------------------------------------
   call minpac#add('dart-lang/dart-vim-plugin') "dart 
 "  call minpac#add('pr3d4t0r/dart-vim-syntax') "dart
   call minpac#add('natebosch/vim-lsc')
   call minpac#add('natebosch/vim-lsc-dart')
+  
   
 endfunction
 
