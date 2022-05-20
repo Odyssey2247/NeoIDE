@@ -35,12 +35,18 @@ function! PackInit() abort
 "   call minpac#add('Badacadabra/vim-archery') "teming
    call minpac#add('arcticicestudio/nord-vim') "teming
    call minpac#add('github/copilot.vim') 
+   call minpac#add('moll/vim-bbye')  "for buffer
+   call minpac#add('junegunn/goyo.vim') "distraction free
+
 "especifig for languaje---------------------------------------
   call minpac#add('dart-lang/dart-vim-plugin') "dart 
 "  call minpac#add('pr3d4t0r/dart-vim-syntax') "dart
-  call minpac#add('natebosch/vim-lsc')
-  call minpac#add('natebosch/vim-lsc-dart')
-  
+"  call minpac#add('natebosch/vim-lsc')
+"  call minpac#add('natebosch/vim-lsc-dart')
+   call minpac#add('robbyrussell/oh-my-zsh')
+   call minpac#add('sbdchd/neoformat') "code formatter  
+
+
   
 endfunction
 
@@ -119,6 +125,8 @@ let g:code_runner_save_before_execute = 1
 let g:CodeRunnerCommandMap = {
       \ 'dart' : 'dart --enable-asserts $fileName'
       \}
+let g:python3_host_prog='/usr/bin/python3'
+let g:python_host_prog='/usr/bin/python'
 
 "vimdart plugin-----------------------------------------------------------------------------------------------------------
 let g:dart_style_guide = 2
