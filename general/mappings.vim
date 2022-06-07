@@ -1,5 +1,5 @@
 "source https://www.chrisatmachine.com/Neovim/02-vim-general-settings/
-" Better nav for omnicomplete
+" Better nav for omnicomplete (autocomplete)
 inoremap <expr> <c-j> ("\<C-n>")
 inoremap <expr> <c-k> ("\<C-p>")
 
@@ -13,7 +13,7 @@ nnoremap <M-l>    :vertical resize +2<CR>
 inoremap jk <Esc>
 inoremap kj <Esc>
 
-" Easy CAPS
+" Easy CAPS (to mayus)
 inoremap <c-u> <ESC>viwUi
 nnoremap <c-u> viwU<Esc>
 
@@ -25,7 +25,7 @@ nnoremap <S-TAB> :bprevious<CR>
 " Alternate way to save
 nnoremap <C-s> :w<CR>
 " Alternate way to quit
-nnoremap <C-Q> :wq!<CR>
+nnoremap <C-q> :wq!<CR>
 " Use control-c instead of escape
 nnoremap <C-c> <Esc>
 nnoremap <C-x> :q<CR>
@@ -36,11 +36,11 @@ inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 vnoremap < <gv
 vnoremap > >gv
 
-" Better window navigation
-nnoremap <C-h> <C-w>h
+" Better window navigation nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+nnoremap <C-h> <C-w>h
 
 " Move in insert mode
 inoremap <a-h> <left>
